@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HamburguesasMundo
 //
-//  Created by Customer Experience Living Lab on 01/09/16.
+//  Created by Josep M Viladegut on 01/09/16.
 //  Copyright © 2016 JViladegut. All rights reserved.
 //
 

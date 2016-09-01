@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  HamburguesasMundo
 //
-//  Created by Customer Experience Living Lab on 01/09/16.
+//  Created by Josep M Viladegut on 01/09/16.
 //  Copyright © 2016 JViladegut. All rights reserved.
 //
 
@@ -13,13 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var etiquetaPais: UILabel!
     @IBOutlet weak var etiquetaHamburguesa: UILabel!
     
-    
     let pais = ColeccionDePaises()
     let hamburguesa = ColeccionDeHamburguesa()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     //Obtiene un color aleatorio
@@ -33,13 +31,14 @@ class ViewController: UIViewController {
         
     }
     
-    
+    //Acción del botón "Quiero una hamburguesa!"
     @IBAction func obtenerPaisYHamburguesa(sender: AnyObject) {
+        //Modifica el texto de las etiquetas
         etiquetaPais.text = pais.obtenPais()
         etiquetaHamburguesa.text = hamburguesa.obtenHamburguesa()
         
+        //Modifica el color de background
         view.backgroundColor = getRandomColor();
-        //view.tintColor = "";
     }
 
 }
